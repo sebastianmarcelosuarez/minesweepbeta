@@ -6,3 +6,6 @@ public class Main {
 	// write your code here
     }
 }
+
+    git remote add origin git@github.com:sebastian/minesweepbeta.git
+
