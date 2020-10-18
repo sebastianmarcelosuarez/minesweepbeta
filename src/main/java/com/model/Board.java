@@ -13,8 +13,34 @@ public class Board {
         initializeBoard (gameBoard);
     }
 
+    /**
+     * Initializes the board, adding all needed settings to use it
+     * @param gameBoard
+     */
     private void initializeBoard(Object[][] gameBoard) {
+        System.out.println("Initializing board with lenght " +gameBoard.length);
 
+        // add boxes
+        int maxMines = (gameBoard.length * 2) % 3;
+
+        for (int i = 0; i < gameBoard.length; i++) {
+            for (int j = 0; j < gameBoard.length; j++) {
+
+                System.out.println("position: " +i+j);
+
+
+                Box box = new Box();
+
+                //reduce number of mines on board
+                if (box.getMine() == Boolean.TRUE) maxMines--;
+                //setting no mine when max mine number is zero
+                if (maxMines <= 0) box.setMine(Boolean.FALSE);
+
+                gameBoard[i][j] = box;
+
+                System.out.println( "Position "+i+" "+j+" with mine; " + ((Box)(gameBoard[i][j])).getMine().toString());
+            }
+        }
 
 
     }
