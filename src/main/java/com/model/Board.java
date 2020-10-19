@@ -140,6 +140,22 @@ public class Board {
         System.out.println();
     }
 
+    /**
+     * Clicks on selected position
+     * @param pos_i
+     * @param pos_j
+     *
+     * returns true if a mine was at that location
+     */
+    public boolean click(int pos_i, int pos_j) {
+
+        ((Box)gameBoard[pos_i][pos_j]).setHidden(Boolean.FALSE);
+        if (  ((Box)gameBoard[pos_i][pos_j]).getMine() ) {
+            System.out.println("MINE EXPLODED!!!!!!!!!!!!!!!!!");
+            return Boolean.TRUE;
+        }
+        return Boolean.FALSE;
+    }
 
     public Object[][] getGameBoard() {
         return gameBoard;
@@ -148,5 +164,7 @@ public class Board {
     public void setGameBoard(Object[][] gameBoard) {
         this.gameBoard = gameBoard;
     }
+
+
 }
 
