@@ -7,19 +7,23 @@ public class Box {
     Boolean mine;
     Boolean hidden;
     BoxStatus status;
+    int minesAround;
 
 
     public Box (){
         super();
-        hidden = true;
-        status = BoxStatus.NONE;
+        this.hidden = true;
+        this.status = BoxStatus.NONE;
+        this.minesAround = 0 ;
 
         Random random = new Random();
         int result = random.nextInt(2);
-        System.out.println(result);
 
-        if (result == 0)  mine = Boolean.TRUE; else mine = Boolean.FALSE;
-
+        if (result == 0 ) {
+            this.mine = Boolean.TRUE;
+        } else {
+            this.mine = Boolean.FALSE;
+        }
     }
 
     public Boolean getMine() {
@@ -44,6 +48,14 @@ public class Box {
 
     public void setStatus(BoxStatus status) {
         this.status = status;
+    }
+
+    public int getMinesAround() {
+        return minesAround;
+    }
+
+    public void setMinesAround(int minesAround) {
+        this.minesAround = minesAround;
     }
 }
 
