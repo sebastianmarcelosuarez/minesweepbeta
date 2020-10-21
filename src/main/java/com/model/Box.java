@@ -8,6 +8,8 @@ public class Box {
     Boolean hidden;
     BoxStatus status;
     int minesAround;
+    int posi;
+    int posj;
 
 
     public Box (){
@@ -56,6 +58,22 @@ public class Box {
 
     public void setMinesAround(int minesAround) {
         this.minesAround = minesAround;
+    }
+
+    public int getPosi() {
+        return posi;
+    }
+
+    public void setPosi(int posi) {
+        this.posi = posi;
+    }
+
+    public int getPosj() {
+        return posj;
+    }
+
+    public void setPosj(int posj) {
+        this.posj = posj;
     }
 }
 

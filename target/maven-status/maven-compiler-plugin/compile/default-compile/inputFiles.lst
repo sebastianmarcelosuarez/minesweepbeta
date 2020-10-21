@@ -1,4 +1,8 @@
 /home/peplo/IdeaProjects/minesweeper1/src/main/java/com/model/Board.java
 /home/peplo/IdeaProjects/minesweeper1/src/main/java/com/Main.java
+/home/peplo/IdeaProjects/minesweeper1/src/main/java/com/model/UserDB.java
+/home/peplo/IdeaProjects/minesweeper1/src/main/java/com/system/SystemService.java
+/home/peplo/IdeaProjects/minesweeper1/src/main/java/com/firebase/MyCallback.java
 /home/peplo/IdeaProjects/minesweeper1/src/main/java/com/model/BoxStatus.java
 /home/peplo/IdeaProjects/minesweeper1/src/main/java/com/model/Box.java
+/home/peplo/IdeaProjects/minesweeper1/src/main/java/com/firebase/FireBaseService.java
